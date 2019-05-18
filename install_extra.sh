@@ -27,8 +27,21 @@ snap install slack --classic
 #oh-my-zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+#zsh as default
+chsh -s $(which zsh)
+
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+#zsh syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 #Blacklist nouveau MAYBE
 # echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
 # dnf remove xorg-x11-drv-nouveau
 # THIS IS WHAT WORKED LAST systemctl disable nvidia-fallback.service
 # SEE https://askubuntu.com/questions/1043638/nouveau-blacklisted-but-loaded
+
+# Powerlevel 9k font
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+

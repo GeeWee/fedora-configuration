@@ -163,3 +163,5 @@ xorg-x11-drv-nvidia-libs
 yarn
 zsh
 zsh-completions
+powerline-fonts
+powerline
