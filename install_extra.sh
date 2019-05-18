@@ -1,4 +1,5 @@
-# Install other packages and do extra steps
+# Install other packages not via dnf
+
 # Make a snap symlink so it will work in fedora without selinux
 # https://www.reddit.com/r/Fedora/comments/7x63ib/is_there_a_way_to_install_classic_confinement/
 sudo ln -s /var/lib/snapd/snap /snap
