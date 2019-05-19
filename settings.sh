@@ -36,20 +36,14 @@ echo "Set startup applications in gnome tweak tools (slack , spotify)"
 /org/gnome/mutter/workspaces-only-on-primary
   false
 
+echo "use gnome-extensions-sync to sync gnome extensions"
+
+
 # Gnome shell extensions from website
-https://extensions.gnome.org/extension/28/gtile/
-https://extensions.gnome.org/extension/1286/tilingnome/
-https://extensions.gnome.org/extension/294/shellshape/
-https://extensions.gnome.org/extension/779/clipboard-indicator/
-https://extensions.gnome.org/extension/442/drop-down-terminal/
-https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/
-https://extensions.gnome.org/extension/690/easyscreencast/
-https://extensions.gnome.org/extension/885/dynamic-top-bar/
-https://extensions.gnome.org/extension/427/workspaces-to-dock/
-https://micheleg.github.io/dash-to-dock/
-https://github.com/JasonLG1979/gnome-shell-extensions-mediaplayer/
-https://github.com/petres/gnome-shell-extension-extensions
-https://extensions.gnome.org/extension/16/auto-move-windows/
-https://extensions.gnome.org/extension/358/activities-configurator/
 https://github.com/albertlauncher/albert
 https://github.com/KELiON/cerebro
+
+
+# add workspace shortcuts
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['F3']"      ✔  08:23:08
+ ~  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['F1']"  
