@@ -31,3 +31,9 @@ snap install slack --classic
 systemctl disable nvidia-fallback.service
 # SEE https://askubuntu.com/questions/1043638/nouveau-blacklisted-but-loaded
 
+
+echo "add this to /etc/dnf/dnf.conf
+max_parallel_downloads=10
+keepcache=true
+fastestmirror=true
+"
