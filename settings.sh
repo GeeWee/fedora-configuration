@@ -47,3 +47,6 @@ https://github.com/KELiON/cerebro
 # add workspace shortcuts
   gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['F3']"      ✔  08:23:08
  ~  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['F1']"  
+
+# only switch on current workspace
+gsettings set org.gnome.shell.app-switcher current-workspace-only true

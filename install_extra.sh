@@ -37,3 +37,5 @@ max_parallel_downloads=10
 keepcache=true
 fastestmirror=true
 "
+
+echo " add this to /etc/sysctl.conf : fs.inotify.max_user_watches=1048576"
