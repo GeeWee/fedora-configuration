@@ -54,3 +54,7 @@ gsettings set org.gnome.shell.app-switcher current-workspace-only true
 # Switch windows not applications
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<ALT>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]" 
+
+# Prt Screen takes snip
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot 'Print' 
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '<Shift>Print' 

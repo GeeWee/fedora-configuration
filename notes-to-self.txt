@@ -1,0 +1,2 @@
+try https://github.com/Peltoche/lsd
+try ripgrep
