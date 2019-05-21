@@ -50,3 +50,7 @@ https://github.com/KELiON/cerebro
 
 # only switch on current workspace
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
+
+# Switch windows not applications
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<ALT>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]" 
