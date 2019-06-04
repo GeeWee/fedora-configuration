@@ -169,3 +169,5 @@ gnome-tweak-tool
 albert
 units
 libxcrypt-compat
+openssl-devel
+ruby-devel
