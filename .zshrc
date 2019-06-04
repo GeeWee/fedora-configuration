@@ -83,3 +83,8 @@ function serveo {
   ssh -R geewee.serveo.net:80:localhost:${1:-3000} serveo.net
 }
 
+
+export PATH=$PATH:/home/geewee/.local/bin
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
