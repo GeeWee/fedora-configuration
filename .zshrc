@@ -69,8 +69,8 @@ alias docker="sudo docker"
 alias docker-compose="sudo docker-compose"
 alias m="python ./manage.py"
 alias python="python3"
-alias work="cd PycharmProjects/reccoon_backend/ && pipenv shell"
-alias workr="cd PycharmProjects/reccoon_backend/react_app/"
+alias work="cd programming/reccoon_monorepo/backend && pipenv shell"
+alias workr="cd programming/reccoon_monorepo/web-client/"
 alias mr='python ./manage.py runserver'
 alias p='ptw -- -k '
 alias ls='ls -a --color=auto'
