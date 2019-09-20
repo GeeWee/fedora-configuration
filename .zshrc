@@ -84,7 +84,7 @@ function serveo {
 }
 
 function pushall {
-  # 
+  # Don't fail push even if there's nothing to commit, that's why we use ; instead of &&
   git add . ; git commit -m "${1}" ; git push
 }
 
