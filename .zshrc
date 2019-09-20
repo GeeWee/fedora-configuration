@@ -83,6 +83,9 @@ function serveo {
   ssh -R geewee.serveo.net:80:localhost:${1:-3000} serveo.net
 }
 
+function pushall {
+  git add . && git commit -m "${1}"
+}
 
 export PATH=$PATH:/home/geewee/.local/bin
 export NVM_DIR="$HOME/.nvm"
