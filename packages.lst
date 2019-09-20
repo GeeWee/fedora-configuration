@@ -171,3 +171,4 @@ units
 libxcrypt-compat
 openssl-devel
 ruby-devel
+dotnet-sdk-2.2

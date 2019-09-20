@@ -24,3 +24,7 @@ sudo rpm --import \
 #TODO MAYBE UPDATE FOR 30 ? https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_29/home:manuelschneid3r.repo
 dnf install albert
+
+# Add .net repositories
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
