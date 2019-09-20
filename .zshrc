@@ -84,7 +84,7 @@ function serveo {
 }
 
 function pushall {
-  git add . && git commit -m "${1}"
+  git add . && git commit -m "${1}" && git push
 }
 
 export PATH=$PATH:/home/geewee/.local/bin
