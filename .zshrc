@@ -65,15 +65,28 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 #ALIASES
-alias docker="sudo docker"
-alias docker-compose="sudo docker-compose"
+
+# General
+alias ls='ls -a --color=auto'
+alias work="cd ~/programming/OAI/"
+
+# C#
+alias dw='dotnet watch'
+alias dwt='dotnet watch test'
+alias dwr='dotnet watch run'
+
+# docker
+# alias docker="sudo docker"
+# alias docker-compose="sudo docker-compose"
+
+# kubernetes
+alias k="kubectl"
+
+# python
 alias m="python ./manage.py"
 alias python="python3"
-alias work="cd programming/reccoon_monorepo/backend && pipenv shell"
-alias workr="cd programming/reccoon_monorepo/web-client/"
 alias mr='python ./manage.py runserver'
 alias p='ptw -- -k '
-alias ls='ls -a --color=auto'
 
 # PATH
 export PATH=$PATH:/home/geewee/.local/bin
