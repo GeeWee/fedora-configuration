@@ -70,9 +70,11 @@ bindkey -M vicmd 'j' history-substring-search-down
 alias ls='ls -a --color=auto'
 alias work="cd ~/programming/OAI/"
 
-# C#
+# C #
 alias dw='dotnet watch'
+alias dwt='dotnet test'
 alias dwt='dotnet watch test'
+alias dr=`dotnet run`
 alias dwr='dotnet watch run'
 
 # docker
