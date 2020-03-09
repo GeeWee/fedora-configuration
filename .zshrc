@@ -74,7 +74,7 @@ alias work="cd ~/programming/OAI/"
 alias dw='dotnet watch'
 alias dwt='dotnet test'
 alias dwt='dotnet watch test'
-alias dr=`dotnet run`
+alias dr='dotnet run'
 alias dwr='dotnet watch run'
 
 # docker
