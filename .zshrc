@@ -72,10 +72,17 @@ alias work="cd ~/programming/OAI/"
 
 # C #
 alias dw='dotnet watch'
-alias dwt='dotnet test'
+alias dt='dotnet test'
 alias dwt='dotnet watch test'
+alias dwtf='dotnet watch test --filter'
 alias dr='dotnet run'
 alias dwr='dotnet watch run'
+alias d="dotnet"
+
+#Azure functions
+alias funcwatch='find . -regextype posix-egrep -regex ".*\.(cs)$" -and -not -regex ".*/(bin|obj)/.*"  | entr -rcd func start'
+
+
 
 # docker
 # alias docker="sudo docker"
