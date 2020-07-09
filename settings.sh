@@ -1,52 +1,21 @@
-# This script configures system settings, gnome extensions etc.
-# I just recorded the settings here for later
+# This script configures system settings
 
-# removes background logo from enabled extensions
-#dconf
-#/org/gnome/shell/enabled-extensions
-#  @as []
+# Calendar settings
+gsettings set org.gnome.desktop.calendar show-weekdate true
+gsettings set org.gnome.desktop.interface clock-show-weekday true
 
-# Always launch new instance
-: '
-/org/gnome/shell/enabled-extensions
-  ['launch-new-instance@gnome-shell-extensions.gcampax.github.com']
-'
+# Set workspaces to switch on all screens
+gsettings set org.gnome.mutter workspaces-only-on-primary false
 
-#
-Add places
-'places-menu@gnome-shell-extensions.gcampax.github.com']
+# Set the correct keyboard layouts
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'dk+winkeys')]"
 
-# Overlay key for kinesis
-/org/gnome/mutter/overlay-key
-  'Super_R'
-
-# Danish language
-/org/gnome/desktop/input-sources/sources
-  [('xkb', 'us'), ('xkb', 'dk+winkeys')]
-
-echo "Set startup applications in gnome tweak tools (slack , spotify)"
-
-/org/gnome/desktop/interface/clock-show-weekday
-  true
-
-/org/gnome/desktop/calendar/show-weekdate
-  true
-
-# Workspaces on all..!
-/org/gnome/mutter/workspaces-only-on-primary
-  false
-
-echo "use gnome-extensions-sync to sync gnome extensions"
-
-
-# Gnome shell extensions from website
-https://github.com/albertlauncher/albert
-https://github.com/KELiON/cerebro
-
+# Add Kinesis left windows key as overlay key
+gsettings set org.gnome.mutter overlay-key 'Super_R'
 
 # add workspace shortcuts
-  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['F3']"      ✔  08:23:08
- ~  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['F1']"  
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['F3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['F1']"
 
 # only switch on current workspace
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
@@ -55,6 +24,6 @@ gsettings set org.gnome.shell.app-switcher current-workspace-only true
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<ALT>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]" 
 
-# Prt Screen takes snip
-gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot-clip 'Print' 
-gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '<Shift>Print' 
+#Prt Screen takes snip. Requires restart to take effect.
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['Print']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot "['<Shift>Print']"

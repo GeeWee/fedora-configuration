@@ -11,7 +11,7 @@ dbus-daemon
 dbus-tools
 dconf-editor
 dnf-data
-docker-ce
+moby-engine
 docker-compose
 dracut-live
 efi-filesystem
