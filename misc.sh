@@ -11,8 +11,9 @@ sudo systemctl enable --now snapd.socket
 sudo snap install --classic code
 
 # Docker
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
+sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+sudo firewall-cmd --permanent --zone=trusted --add-interface=docker0
+sudo firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
 
 # Add user to docker group
 sudo groupadd docker
@@ -39,3 +40,8 @@ fastestmirror=true
 "
 
 echo " add this to /etc/sysctl.conf : fs.inotify.max_user_watches=1048576"
+
+echo "Generating an ssh key"
+ssh-keygen -t rsa -b 4096 -C "gustavwengel@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
