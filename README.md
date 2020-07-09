@@ -14,6 +14,7 @@ Script steps:
 # More steps
 - Synchronize firefox via the firefox sync account
 - Login to your 1Password account with gustavwengel@gmail.com at reccoon.1password.com
+- Change 1Password shortcut to ALT+Q
 
 
 # todo xmodmap?

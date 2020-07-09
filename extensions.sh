@@ -1,29 +1,30 @@
 # This script configures system settings, gnome extensions etc.
 
-# removes background logo from enabled extensions
-#dconf
-#/org/gnome/shell/enabled-extensions
-#  @as []
 
-# Always launch new instance
-# : '
+# Currently just comments. I've tried using gnome-extensions-sync but it seems buggy.
+
+# ---> Install following plugins
+
+# Disable Workspace Switcher Popup 
+
+# Auto move windows
+
+# Always open in workspace
+
+# Remove workspace overlay
+
+# Window Is Ready - Notification Remover
+
+# AlternateTab
+
+# Removeable Drive Menu
+
+# Launch new instance
+
+# Places Status Indicator
+
+# Horizontal Workspaces
 
 
-# /org/gnome/shell/enabled-extensions
-#  ['launch-new-instance@gnome-shell-extensions.gcampax.github.com']
-# '
 
-#
-# Add places
-# 'places-menu@gnome-shell-extensions.gcampax.github.com']
-
-
-# Danish language
-
-
-# Gnome shell extensions from website
-# https://github.com/albertlauncher/albert
-# https://github.com/KELiON/cerebro
-
-echo "Set startup applications in gnome tweak tools (slack , spotify)"
-echo "use gnome-extensions-sync to sync gnome extensions"
+echo "read the script file you dumdum"

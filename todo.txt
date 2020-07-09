@@ -1,0 +1,8 @@
+# TODO install teams from scripts???
+# TODO add new fedora32 extensions package
+# TODO document what to always open where via gnome tweak tools
+# TODO figure out how to get the top bar in the bottom..!
+
+# todo xmodmap?
+# todo explain how to configure extensions
+# todo rider?

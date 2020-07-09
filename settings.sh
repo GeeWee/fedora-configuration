@@ -20,6 +20,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['F1']"
 # only switch on current workspace
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
+# 3 static workspaces
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 3
+
 # Switch windows not applications
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<ALT>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]" 
