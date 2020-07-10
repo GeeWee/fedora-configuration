@@ -179,3 +179,5 @@ inotify-tools
 entr
 dotnet-sdk-3.1
 git-lfs
+compat-openssl10
+powershell

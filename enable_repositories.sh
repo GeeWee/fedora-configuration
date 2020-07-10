@@ -17,14 +17,20 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:
 # Yarn
 curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
 
-# Add .net repositories
+# Microsoft key
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+# Add .net repositories
 sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
 
 # Teams
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[teams]\nname=teams\nbaseurl=https://packages.microsoft.com/yumrepos/ms-teams\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/teams.repo'
 sudo dnf check-updat
 
 # Add git lfs
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
+
+# Powershell repos
+curl https://packages.microsoft.com/config/rhel/7/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
+sudo dnf check-update
+sudo dnf install compat-openssl10
