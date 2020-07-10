@@ -12,11 +12,8 @@ Script steps:
 
 
 # More steps
+- Make Teams, Slack and Spotify always start up on program start, and always be in workspace 3
 - Synchronize firefox via the firefox sync account
 - Login to your 1Password account with gustavwengel@gmail.com at reccoon.1password.com
 - Change 1Password shortcut to ALT+Q
-
-
-# todo xmodmap?
-# todo explain how to configure extensions
-# todo rider?
+- Install Jetbrains toolbox and the IDEs you want
