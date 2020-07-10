@@ -32,6 +32,9 @@ snap install slack --classic
 systemctl disable nvidia-fallback.service
 # SEE https://askubuntu.com/questions/1043638/nouveau-blacklisted-but-loaded
 
+# Add git lfs
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
+
 
 echo "add this to /etc/dnf/dnf.conf
 max_parallel_downloads=10
@@ -45,3 +48,5 @@ echo "Generating an ssh key"
 ssh-keygen -t rsa -b 4096 -C "gustavwengel@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
+
+
