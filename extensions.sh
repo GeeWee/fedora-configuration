@@ -27,7 +27,7 @@
 
 # Drop Down Terminal (Maybe, I haven't found the right one yet..?)
 
-# Bottom Bar (Maybe, I feel like I used a different one here as well)
+# Dash To Panel
 
 
 echo "read the script file you dumdum"
