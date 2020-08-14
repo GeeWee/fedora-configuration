@@ -115,6 +115,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# fix dotnet issue https://github.com/dotnet/sdk/issues/12359
+export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
+export PATH="$PATH:$HOME/.dotnet/tools"
+
 # Default editor
 export EDITOR='nano'
 export VISUAL='nano'
