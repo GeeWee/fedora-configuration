@@ -34,3 +34,6 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.s
 curl https://packages.microsoft.com/config/rhel/7/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
 sudo dnf check-update
 sudo dnf install compat-openssl10
+
+# VSCode 
+sudo echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
