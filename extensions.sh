@@ -29,6 +29,5 @@
 
 # Dash To Panel
 
-# NoAnnoyance v2
 
 echo "read the script file you dumdum"
