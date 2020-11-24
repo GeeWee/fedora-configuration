@@ -70,6 +70,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 alias ls='ls -a --color=auto'
 alias work="cd ~/programming/OAI/"
 
+
 # C #
 alias dw='dotnet watch'
 alias dt='dotnet test'
@@ -83,6 +84,13 @@ alias d="dotnet"
 alias funcwatch='find . -regextype posix-egrep -regex ".*\.(cs)$" -and -not -regex ".*/(bin|obj)/.*"  | entr -rcd func start'
 
 
+function cliptofile {
+  local uuid="screenshot_$(uuidgen).png";
+  local defaultPath="${HOME}/Pictures/${uuid}";
+  local filePath=${1:-$defaultPath};
+  echo "Writing clipboard to $filePath"
+  xclip -selection clipboard -t image/png -o > $filePath
+}
 
 # docker
 # alias docker="sudo docker"
@@ -103,6 +111,13 @@ export FONTAWESOME_NPM_TOKEN=6F134172-0C23-447A-8EFC-C0FF3520C3E1
 
 function serveo {
   ssh -R geewee.serveo.net:80:localhost:${1:-3000} serveo.net
+}
+
+function cliptofile {
+  uuid=$(uuidgen);
+  defaultPath="~/Pictures/${uuid}";
+  path=VAR=${1:-defaultPath}
+  xclip -selection clipboard -t image/png -o > $0
 }
 
 function pushall {
