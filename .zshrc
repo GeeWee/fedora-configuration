@@ -70,6 +70,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 alias ls='ls -a --color=auto'
 alias work="cd ~/programming/OAI/"
 
+
 # C #
 alias dw='dotnet watch'
 alias dt='dotnet test'
@@ -83,6 +84,13 @@ alias d="dotnet"
 alias funcwatch='find . -regextype posix-egrep -regex ".*\.(cs)$" -and -not -regex ".*/(bin|obj)/.*"  | entr -rcd func start'
 
 
+function cliptofile {
+  local uuid="screenshot_$(uuidgen).png";
+  local defaultPath="${HOME}/Pictures/${uuid}";
+  local filePath=${1:-$defaultPath};
+  echo "Writing clipboard to $filePath"
+  xclip -selection clipboard -t image/png -o > $filePath
+}
 
 # docker
 # alias docker="sudo docker"
@@ -105,6 +113,13 @@ function serveo {
   ssh -R geewee.serveo.net:80:localhost:${1:-3000} serveo.net
 }
 
+function cliptofile {
+  uuid=$(uuidgen);
+  defaultPath="~/Pictures/${uuid}";
+  path=VAR=${1:-defaultPath}
+  xclip -selection clipboard -t image/png -o > $0
+}
+
 function pushall {
   # Don't fail push even if there's nothing to commit, that's why we use ; instead of &&
   git add . ; git commit -m "${1}" ; git push
@@ -114,6 +129,10 @@ export PATH=$PATH:/home/geewee/.local/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# fix dotnet issue https://github.com/dotnet/sdk/issues/12359
+export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
+export PATH="$PATH:$HOME/.dotnet/tools"
 
 # Default editor
 export EDITOR='nano'
