@@ -34,3 +34,11 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.s
 curl https://packages.microsoft.com/config/rhel/7/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
 sudo dnf check-update
 sudo dnf install compat-openssl10
+
+# Azure cli
+sudo sh -c 'echo -e "[azure-cli]
+name=Azure CLI
+baseurl=https://packages.microsoft.com/yumrepos/azure-cli
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo'
