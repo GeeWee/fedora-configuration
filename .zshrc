@@ -88,8 +88,8 @@ function cliptofile {
   local uuid="screenshot_$(uuidgen).png";
   local defaultPath="${HOME}/Pictures/${uuid}";
   local filePath=${1:-$defaultPath};
-  echo "Writing clipboard to $filePath"
-  xclip -selection clipboard -t image/png -o > $filePath
+  echo "Writing clipboard to $filePath";
+  xclip -selection clipboard -t image/png -o > $filePath;
 }
 
 # docker
@@ -111,13 +111,6 @@ export FONTAWESOME_NPM_TOKEN=6F134172-0C23-447A-8EFC-C0FF3520C3E1
 
 function serveo {
   ssh -R geewee.serveo.net:80:localhost:${1:-3000} serveo.net
-}
-
-function cliptofile {
-  uuid=$(uuidgen);
-  defaultPath="~/Pictures/${uuid}";
-  path=VAR=${1:-defaultPath}
-  xclip -selection clipboard -t image/png -o > $0
 }
 
 function pushall {
