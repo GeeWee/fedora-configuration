@@ -6,11 +6,12 @@ Script steps:
 - run `1_settings.sh` to fix keyboard settings etc. You might want to log in and out of gnome after this.
 - run `2_enable.repositories.sh` to enable all the repositories
 - run `3_packages.sh` to install dnf packages from packages.lst
-- run `4_snaps.sh` to install all snaps
-- run `5_terminal.sh` to install zsh. DO NOT RUN AS ROOT!!! (It will copy .zsh into the root instead of the user folder). You might need to run it twice.
-- run `6_misc.sh` to do misc configuration and extra installation
-- run `7_zsh.sh` to copy over .zshrc to folder
-- run `8_extensions.sh` to get info about which gnome extensions to install
+
+- run `4_terminal.sh` to install zsh. DO NOT RUN AS ROOT!!! (It will copy .zsh into the root instead of the user folder). You might need to run it twice.
+- run `5_misc.sh` to do misc configuration and extra installation
+- run `zsh.sh` to copy over .zshrc to folder
+- run `6_extensions.sh` to get info about which gnome extensions to install
+- run `7_snaps.sh` to install all snaps
 
 
 # More steps

@@ -7,9 +7,6 @@ sudo ln -s /var/lib/snapd/snap /snap
 # Enable snapd socket -> https://computingforgeeks.com/install-snapd-and-snap-applications-on-fedora/
 sudo systemctl enable --now snapd.socket
 
-#vscode
-sudo snap install --classic code
-
 # Docker
 sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 sudo firewall-cmd --permanent --zone=trusted --add-interface=docker0

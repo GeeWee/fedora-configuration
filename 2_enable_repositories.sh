@@ -49,10 +49,6 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 # Add .net repositories
 sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/"${FEDORA_VERSION}"/prod.repo
 
-# Powershell repos
-curl https://packages.microsoft.com/config/rhel/7/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
-sudo dnf check-update
-
 # Azure cli
 sudo sh -c 'echo -e "[azure-cli]
 name=Azure CLI
