@@ -4,3 +4,8 @@
 # todo xmodmap?
 # todo explain how to configure extensions
 # todo rider?
+
+Things to try:
+try https://github.com/Peltoche/lsd
+try ripgrep
+https://github.com/Canop/broot

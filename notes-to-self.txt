@@ -1,3 +1,0 @@
-try https://github.com/Peltoche/lsd
-try ripgrep
-https://github.com/Canop/broot
