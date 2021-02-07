@@ -67,7 +67,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 #ALIASES
 
 # General
-alias ls='ls -a --color=auto'
+alias ls='br -sdp'
 alias work="cd ~/programming/OAI/"
 
 
@@ -91,10 +91,6 @@ function cliptofile {
   echo "Writing clipboard to $filePath";
   xclip -selection clipboard -t image/png -o > $filePath;
 }
-
-# docker
-# alias docker="sudo docker"
-# alias docker-compose="sudo docker-compose"
 
 # kubernetes
 alias k="kubectl"
@@ -130,3 +126,7 @@ export PATH="$PATH:$HOME/.dotnet/tools"
 # Default editor
 export EDITOR='nano'
 export VISUAL='nano'
+
+# Terraform autocomplete
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

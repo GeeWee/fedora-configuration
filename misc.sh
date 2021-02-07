@@ -19,11 +19,6 @@ sudo firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
 sudo groupadd docker
 sudo usermod -aG docker geewee
 
-# Snap
-snap install spotify
-
-#Slack
-snap install slack --classic
 
 #Blacklist nouveau MAYBE
 # echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
@@ -46,5 +41,7 @@ ssh-keygen -t rsa -b 4096 -C "gustavwengel@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
-# Azure cli
-sudo yum install azure-cli
+
+# Install broot
+sudo wget https://dystroy.org/broot/download/x86_64-linux/broot -O /usr/local/bin/broot
+sudo chmod +x /usr/local/bin/broot
