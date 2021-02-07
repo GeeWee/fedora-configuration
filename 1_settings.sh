@@ -31,3 +31,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]"
 #Prt Screen takes snip. Requires restart to take effect.
 gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['Print']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot "['<Shift>Print']"
+
+# Show hidden files
+gsettings set org.gnome.nautilus.preferences show-hidden-files true

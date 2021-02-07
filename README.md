@@ -18,7 +18,9 @@ Script steps:
 - Synchronize firefox via the firefox sync account
 - Login to your 1Password account with gustavwengel@gmail.com at reccoon.1password.com
 - Go to leechblock extension and type "import from sync storage"
-- Change 1Password shortcut to ALT+Q\
+- Change 1Password shortcut to ALT+Q
+
+
 
 
 # Things to try out sometime

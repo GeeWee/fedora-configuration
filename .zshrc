@@ -67,9 +67,9 @@ bindkey -M vicmd 'j' history-substring-search-down
 #ALIASES
 
 # General
-alias ls='br -sdp'
+alias ls="br -sdp" # Use broot to ls
 alias work="cd ~/programming/OAI/"
-
+alias open="xdg-open"
 
 # C #
 alias dw='dotnet watch'

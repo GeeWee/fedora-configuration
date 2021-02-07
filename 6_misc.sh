@@ -45,7 +45,7 @@ ssh-add ~/.ssh/id_rsa
 # Install broot
 sudo wget https://dystroy.org/broot/download/x86_64-linux/broot -O /usr/local/bin/broot
 sudo chmod +x /usr/local/bin/broot
-
+/usr/local/bin/broot --install
 
 # Install jetbrains toolbox
 sudo bash ./jetbrains-toolbox.sh
