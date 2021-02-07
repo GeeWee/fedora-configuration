@@ -10,13 +10,15 @@ Script steps:
 - run `5_terminal.sh` to install zsh. DO NOT RUN AS ROOT!!! (It will copy .zsh into the root instead of the user folder). You might need to run it twice.
 - run `6_misc.sh` to do misc configuration and extra installation
 - run `7_zsh.sh` to copy over .zshrc to folder
+- run `8_extensions.sh` to get info about which gnome extensions to install
 
 
 # More steps
 - Make Teams, Slack and Spotify always start up on program start, and always be in workspace 3
 - Synchronize firefox via the firefox sync account
 - Login to your 1Password account with gustavwengel@gmail.com at reccoon.1password.com
-- Change 1Password shortcut to ALT+Q
+- Go to leechblock extension and type "import from sync storage"
+- Change 1Password shortcut to ALT+Q\
 
 
 # Things to try out sometime

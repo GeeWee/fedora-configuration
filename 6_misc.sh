@@ -49,3 +49,6 @@ sudo chmod +x /usr/local/bin/broot
 
 # Install jetbrains toolbox
 sudo bash ./jetbrains-toolbox.sh
+
+# Copy over hosts file
+sudo cp ./hosts.txt /etc/hosts

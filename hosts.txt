@@ -1,0 +1,5 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+127.0.0.1 dr.dk www.dr.dk
+127.0.0.1 tv2.dk www.tv2.dk
+127.0.0.1 theguardian.com www.theguardian.com
