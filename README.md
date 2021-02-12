@@ -20,7 +20,7 @@ Script steps:
 - Login to your 1Password account with gustavwengel@gmail.com at reccoon.1password.com
 - Go to leechblock extension and type "import from sync storage"
 - Change 1Password shortcut to ALT+Q
-
+- configure teams and high fidelity sink https://askubuntu.com/questions/1085480/bluetooth-headphones-switches-from-a2dp-sink-to-hsp-hfp-when-starting-voip-a
 
 
 

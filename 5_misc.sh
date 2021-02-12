@@ -16,6 +16,8 @@ sudo firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
 sudo groupadd docker
 sudo usermod -aG docker geewee
 
+# Start docker daemon on boot
+sudo systemctl enable docker
 
 #Blacklist nouveau MAYBE
 # echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
