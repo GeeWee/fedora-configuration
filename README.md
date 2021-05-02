@@ -21,7 +21,7 @@ Script steps:
 - Go to leechblock extension and type "import from sync storage"
 - Change 1Password shortcut to ALT+Q
 - configure teams and high fidelity sink https://askubuntu.com/questions/1085480/bluetooth-headphones-switches-from-a2dp-sink-to-hsp-hfp-when-starting-voip-a
-
+- Copy the bin folder of this repo into ~/bin
 
 
 # Things to try out sometime
