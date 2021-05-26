@@ -130,3 +130,7 @@ export VISUAL='nano'
 # Terraform autocomplete
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+# Do not autocorrect .files
+# see https://unix.stackexchange.com/questions/422443/stop-zsh-from-trying-to-correct-ssh-to-ssh-as-an-argument
+export CORRECT_IGNORE_FILE='.*'
