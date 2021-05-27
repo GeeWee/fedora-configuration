@@ -134,3 +134,6 @@ complete -o nospace -C /usr/bin/terraform terraform
 # Do not autocorrect .files
 # see https://unix.stackexchange.com/questions/422443/stop-zsh-from-trying-to-correct-ssh-to-ssh-as-an-argument
 export CORRECT_IGNORE_FILE='.*'
+
+# Source broot to allow for broot/ls
+source /home/geewee/.config/broot/launcher/bash/br
