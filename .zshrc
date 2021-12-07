@@ -100,6 +100,9 @@ alias python="python3"
 alias mr='python ./manage.py runserver'
 alias p='ptw -- -k '
 
+# cargo doesn't need correcting
+alias cargo="nocorrect cargo"
+
 # PATH
 export PATH=$PATH:/home/geewee/.local/bin
 export FONTAWESOME_NPM_TOKEN=6F134172-0C23-447A-8EFC-C0FF3520C3E1
