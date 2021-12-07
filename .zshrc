@@ -105,7 +105,6 @@ alias cargo="nocorrect cargo"
 
 # PATH
 export PATH=$PATH:/home/geewee/.local/bin
-export FONTAWESOME_NPM_TOKEN=6F134172-0C23-447A-8EFC-C0FF3520C3E1
 
 function serveo {
   ssh -R geewee.serveo.net:80:localhost:${1:-3000} serveo.net
