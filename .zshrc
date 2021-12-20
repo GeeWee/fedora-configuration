@@ -71,16 +71,16 @@ alias work="cd ~/programming/OAI/"
 alias open="xdg-open"
 
 # C #
-alias dw='dotnet watch'
-alias dt='dotnet test'
-alias dwt='dotnet watch test'
-alias dwtf='dotnet watch test --filter'
-alias dr='dotnet run'
-alias dwr='dotnet watch run'
-alias d="dotnet"
+#alias dw='dotnet watch'
+#alias dt='dotnet test'
+#alias dwt='dotnet watch test'
+#alias dwtf='dotnet watch test --filter'
+#alias dr='dotnet run'
+#alias dwr='dotnet watch run'
+#alias d="dotnet"
 
 #Azure functions
-alias funcwatch='find . -regextype posix-egrep -regex ".*\.(cs)$" -and -not -regex ".*/(bin|obj)/.*"  | entr -rcd func start'
+#alias funcwatch='find . -regextype posix-egrep -regex ".*\.(cs)$" -and -not -regex ".*/(bin|obj)/.*"  | entr -rcd func start'
 
 
 function cliptofile {
@@ -121,8 +121,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # fix dotnet issue https://github.com/dotnet/sdk/issues/12359
-export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
-export PATH="$PATH:$HOME/.dotnet/tools"
+#export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
+#export PATH="$PATH:$HOME/.dotnet/tools"
 
 # Default editor
 export EDITOR='nano'
@@ -138,3 +138,7 @@ export CORRECT_IGNORE_FILE='.*'
 
 # Source broot to allow for broot/ls
 source /home/geewee/.config/broot/launcher/bash/br
+
+# Cargo aliases
+alias cargo-validate='cargo fmt --all && cargo check --workspace && cargo unit && sh ./integration-tests/run-tests.sh && cargo clippy --workspace'
+alias cv='cargo-validate'
