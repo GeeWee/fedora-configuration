@@ -142,3 +142,7 @@ source /home/geewee/.config/broot/launcher/bash/br
 # Cargo aliases
 alias cargo-validate='cargo fmt --all && cargo check --workspace && cargo unit && sh ./integration-tests/run-tests.sh && cargo clippy --workspace'
 alias cv='cargo-validate'
+
+fastly-watch() {
+  find . -name "*.rs" -not -path "*./target*" | entr -r -s '(cd ./edge-api && fastly compute serve)'
+}
