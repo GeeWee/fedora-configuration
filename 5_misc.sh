@@ -51,3 +51,7 @@ sudo bash ./jetbrains-toolbox.sh
 
 # Copy over hosts file
 sudo cp ./hosts.txt /etc/hosts
+
+# copy over bin
+mkdir -p ~/bin
+cp ./bin/* ~/bin/
