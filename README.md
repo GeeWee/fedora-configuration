@@ -25,6 +25,8 @@ Script steps:
 - Set startup applications via gnome tweak tools
 - Set extensions -> dock to dash -> isolate workspaces
 - run "ibus-setup" and change the emoji shortcut to none, or at least something other than ctrl+.
+- fix headset issues by following https://askubuntu.com/questions/863930/bluetooth-headset-cant-set-a2dp-high-fidelity-playback-poor-sound-quality
+
 
 # Things to try out sometime
 try https://github.com/Peltoche/lsd
