@@ -12,7 +12,7 @@ Script steps:
 - run `shell.sh` to copy over .zshrc to folder
 - run `6_extensions.sh` to get info about which gnome extensions to install
 - run `7_snaps.sh` to install all snaps
-
+- run `8_jetbrains_toolbox.sh` to install all snaps
 
 # More steps
 - Make Teams, Slack and Spotify always start up on program start, and always be in workspace 3
