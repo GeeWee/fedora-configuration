@@ -23,7 +23,8 @@ Script steps:
 - configure teams and high fidelity sink https://askubuntu.com/questions/1085480/bluetooth-headphones-switches-from-a2dp-sink-to-hsp-hfp-when-starting-voip-a
 - Copy the bin folder of this repo into ~/bin (should be done auto now)
 - Set startup applications via gnome tweak tools
-
+- Set extensions -> dock to dash -> isolate workspaces
+- run "ibus-setup" and change the emoji shortcut to none, or at least something other than ctrl+.
 
 # Things to try out sometime
 try https://github.com/Peltoche/lsd
