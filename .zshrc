@@ -100,6 +100,9 @@ alias python="python3"
 alias mr='python ./manage.py runserver'
 alias p='ptw -- -k '
 
+# Kitty ssh
+alias ssh="kitty +kitten ssh"
+
 # cargo doesn't need correcting
 alias cargo="nocorrect cargo"
 

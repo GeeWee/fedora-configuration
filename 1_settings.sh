@@ -35,3 +35,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot "['<Shift>
 
 # Show hidden files
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
+
+# Remove auto update (TODO might not be enough)
+gsettings set org.gnome.software download-updates-notify false
+gsettings set org.gnome.software download-updates false

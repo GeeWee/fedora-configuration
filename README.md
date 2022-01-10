@@ -26,7 +26,7 @@ Script steps:
 - Set extensions -> dock to dash -> isolate workspaces
 - run "ibus-setup" and change the emoji shortcut to none, or at least something other than ctrl+.
 - fix headset issues by following https://askubuntu.com/questions/863930/bluetooth-headset-cant-set-a2dp-high-fidelity-playback-poor-sound-quality
-
+- install rust curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Things to try out sometime
 try https://github.com/Peltoche/lsd
@@ -39,3 +39,5 @@ try ripgrep
 - todo xmodmap?
 - todo explain how to configure extensions
 - todo rider?
+
+https://twitter.com/amilajack/status/1479328649820000256
