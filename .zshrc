@@ -143,7 +143,7 @@ export CORRECT_IGNORE_FILE='.*'
 source /home/geewee/.config/broot/launcher/bash/br
 
 # Cargo aliases
-alias cargo-validate='cargo fix --allow-dirty && cargo fmt --all && cargo check && cargo clippy --workspace --fix --allow-dirty && cargo clippy --workspace && cargo unit && sh ./integration-tests/run-tests.sh'
+alias cargo-validate='cargo fix --allow-dirty && cargo fmt --all --allow-dirty && cargo check && cargo clippy --workspace --fix --allow-dirty && cargo clippy --workspace && cargo unit && sh ./integration-tests/run-tests.sh'
 alias cv='cargo-validate'
 
 fastly-watch() {
